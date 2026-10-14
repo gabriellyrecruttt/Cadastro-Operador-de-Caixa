@@ -333,6 +333,10 @@
             return;
         }
 
+        /*
+         * Se tentar voltar, retorna para onde estava.
+         */
+
         if (video.currentTime < lastTime - 0.5) {
 
             video.currentTime = lastTime;
