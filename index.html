@@ -230,6 +230,7 @@
                     src="https://res.cloudinary.com/uqats0ee/video/upload/v1791989409/video-caixa.mp4.mp4"
                     type="video/mp4"
                 >
+
                 Seu navegador não suporta a reprodução deste vídeo.
             </video>
 
@@ -332,6 +333,10 @@
         if (!videoStarted) {
             return;
         }
+
+        /*
+         * Se tentar voltar, retorna para onde estava.
+         */
 
         if (video.currentTime < lastTime - 0.5) {
 
